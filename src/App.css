@@ -50,9 +50,11 @@ a:hover {
   align-items: center;
   width: 100%;
 }
+
 .logo {
   margin: 0 0 0 15px;
 }
+
 .logo a {
   color: white;
 }

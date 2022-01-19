@@ -1,10 +1,35 @@
 import React from 'react';
 
+import millify from 'millify';
+import { Link } from 'react-router-dom';
+import { Typography, Row, Col, Statistic } from 'antd';
+
+const { Title } = Typography;
+
 const Home = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
-    </div>
+    <>
+      <Title level={2} className="heading">
+        Global Crypto Stats
+      </Title>
+      <Row>
+        <Col span={12}>
+          <Statistic title="Total Cryptocurriencies" value={5} />
+        </Col>
+        <Col span={12}>
+          <Statistic title="Total Exchangs" value={5} />
+        </Col>
+        <Col span={12}>
+          <Statistic title="Total Market Cab" value={5} />
+        </Col>
+        <Col span={12}>
+          <Statistic title="Total 24h Volume" value={5} />
+        </Col>
+        <Col span={12}>
+          <Statistic title="Total Markets" value={5} />
+        </Col>
+      </Row>
+    </>
   );
 };
 

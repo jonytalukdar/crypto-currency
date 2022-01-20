@@ -6,6 +6,7 @@ import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi';
 import { useGetCryptosQuery } from '../services/cryptoApi';
 
 import demoImage from '../images/demo.jpg';
+import Loader from '../components/Loader';
 
 const { Text, Title } = Typography;
 const { Option } = Select;
@@ -19,7 +20,7 @@ const News = ({ simplified }) => {
   });
   const { data } = useGetCryptosQuery(100);
 
-  if (isFetching) return <h2>Loading...</h2>;
+  if (isFetching) return <Loader />;
 
   return (
     <Row gutter={[24, 24]}>

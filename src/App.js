@@ -26,7 +26,7 @@ const App = () => {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/crypto" component={Cryptocurrencies} />
-              <Route path="/crypto/:id" component={CryptoDetails} />
+              <Route path="/crypto/:uuid" component={CryptoDetails} />
               <Route path="/exchange" component={Exchange} />
               <Route path="/news" component={News} />
             </Switch>
